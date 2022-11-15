@@ -1,0 +1,7 @@
+package poo;
+
+public class Asignatura {
+	public final String[] asignaturas= {"introducción a la programación", "ingeniería de software", "sistemas operativos de redes"};
+	
+	
+}

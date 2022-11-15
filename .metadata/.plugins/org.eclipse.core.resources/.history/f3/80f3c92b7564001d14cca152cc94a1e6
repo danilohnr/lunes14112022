@@ -1,0 +1,12 @@
+package poo;
+
+public class Aula {
+	private int ID;
+	private final int MaxEstudiantes=20;
+	private String Asignatura;
+	
+	private Profesor profesor;
+	private Estudiante[] estudiante;
+	
+
+}

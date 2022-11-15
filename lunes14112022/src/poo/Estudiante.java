@@ -1,0 +1,35 @@
+package poo;
+
+public class Estudiante extends Persona{
+	private int Calificacion;
+
+	public Estudiante() {
+		super();
+		this.Calificacion=Metodos.generanNumerosAleatorios(0, 10);
+		super.setEdad(Metodos.generanNumerosAleatorios(17, 25));
+	}
+
+	public int getCalificacion() {
+		return Calificacion;
+	}
+
+	public void setCalificacion(int calificacion) {
+		Calificacion = calificacion;
+	}
+
+	@Override
+	public void Disponibilidad() {
+		int Probabilidad=Metodos.generanNumerosAleatorios(0,100);
+		if(Probabilidad < 50) {
+			super.setAsistencias(false);
+		} else {
+			super.setAsistencias(true);
+		}
+	}
+	public String MostrarInfoEstudiantes() {
+		return "Nombre: "+super.getNombre()+", Calificacion: "+getCalificacion()+", Sexo: "+super.getSexo()+", Edad: "+super.getEdad();
+	}
+	
+	
+
+}

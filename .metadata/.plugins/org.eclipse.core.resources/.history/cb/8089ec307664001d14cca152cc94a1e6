@@ -1,0 +1,21 @@
+package poo;
+
+public class Aula {
+	private int ID;
+	private final int MaxEstudiantes=20;
+	private String Asignatura;
+	
+	private Profesor profesor;
+	private Estudiante[] estudiantes;
+	
+	
+	public Aula() {
+		this.ID=1;
+		this.profesor=new Profesor();
+		this.estudiantes=new Estudiante[MaxEstudiantes];
+		this.Asignatura=Asignatura.ASIGN
+	}
+	
+	
+
+}

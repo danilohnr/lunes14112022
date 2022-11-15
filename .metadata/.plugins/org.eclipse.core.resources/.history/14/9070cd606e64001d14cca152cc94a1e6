@@ -1,0 +1,13 @@
+package poo;
+
+public class Estudiante extends Persona{
+	private int Calificacion;
+
+	public Estudiante(String nombre, int edad, char sexo, boolean asistencias, int calificacion) {
+		super(nombre, edad, sexo, asistencias);
+		Calificacion = calificacion;
+	}
+	
+	
+
+}

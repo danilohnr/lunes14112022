@@ -1,0 +1,12 @@
+package poo;
+
+public class Profesor extends Persona {
+	private String Asignatura;
+	public Profesor() {
+		super();
+		this.Asignatura=Asignatura.asignaturas[Metodos.generanNumerosAleatorios(0,1)];
+		super.Edad=Metodos.generanNumerosAleatorios(25, 50);
+	}
+	
+
+}

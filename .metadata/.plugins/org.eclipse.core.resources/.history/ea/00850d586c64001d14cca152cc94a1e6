@@ -1,0 +1,19 @@
+package poo;
+
+public class Persona {
+	private String Nombre;
+	private int Edad;
+	private char Sexo;
+	private boolean Asistencias;
+	public Persona(String nombre, int edad, char sexo, boolean asistencias) {
+		super();
+		Nombre = nombre;
+		Edad = edad;
+		Sexo = sexo;
+		Asistencias = asistencias;
+	}
+	
+	
+	
+
+}

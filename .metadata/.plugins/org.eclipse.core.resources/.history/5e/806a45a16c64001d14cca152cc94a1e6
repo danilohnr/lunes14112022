@@ -1,0 +1,8 @@
+package poo;
+
+public class Estudiante extends Persona{
+	private int Calificacion;
+	
+	
+
+}

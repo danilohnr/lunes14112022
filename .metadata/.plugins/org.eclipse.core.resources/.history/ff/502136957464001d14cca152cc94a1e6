@@ -1,0 +1,51 @@
+package poo;
+
+public abstract class Persona {
+	private String Nombre;
+	private int Edad;
+	private char Sexo;
+	private boolean Asistencias;
+	
+	private final String[] NOMBRES_ALUMNOS= {"Juan", "Fernando", "Josue", "Hollman"};
+	private final String[] NOMBRES_ALUMNAS= {"Tania", "Jennifer", "Jessica", "Rebecca"};
+	
+	public Persona() {
+		int sexoAleatorio=Metodos.generanNumerosAleatorios(0,1);
+		if(sexoAleatorio==0) {
+			this.Nombre=NOMBRES_ALUMNOS[Metodos.generanNumerosAleatorios(0, 3)];
+			this.Sexo='M';
+		}else {
+			this.Nombre=NOMBRES_ALUMNAS[Metodos.generanNumerosAleatorios(0, 3)];
+			this.Sexo='F';
+		}
+	}
+	
+	public String getNombre() {
+		return Nombre;
+	}
+	public void setNombre(String nombre) {
+		Nombre = nombre;
+	}
+	public int getEdad() {
+		return Edad;
+	}
+	public void setEdad(int edad) {
+		Edad = edad;
+	}
+	public char getSexo() {
+		return Sexo;
+	}
+	public void setSexo(char sexo) {
+		Sexo = sexo;
+	}
+	public boolean isAsistencias() {
+		return Asistencias;
+	}
+	public void setAsistencias(boolean asistencias) {
+		Asistencias = asistencias;
+	}
+	
+	public abstract void Disponibilidad();
+
+
+}

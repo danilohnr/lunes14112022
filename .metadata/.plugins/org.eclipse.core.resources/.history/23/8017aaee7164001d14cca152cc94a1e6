@@ -1,0 +1,11 @@
+package poo;
+
+public class Profesor extends Persona {
+	private String Asignatura;
+	public Profesor() {
+		super();
+		this.Asignatura=Asignatura.Asig
+	}
+	
+
+}

@@ -1,0 +1,36 @@
+package poo;
+
+public class Aula {
+	private int iD;
+	private final int MaxEstudiantes=20;
+	private String asignatura;
+	
+	private Profesor profesor;
+	private Estudiante[] estudiantes;
+	
+	
+	public Aula() {
+		this.iD=1;
+		this.profesor=new Profesor();
+		this.estudiantes=new Estudiante[MaxEstudiantes];
+		this.asignatura=Asignatura.ASIGNATURAS[Metodos.generanNumerosAleatorios(0,2)];
+		crearEstudiantes();
+	}
+	private void crearEstudiantes() {
+		for (int i = 0; i < estudiantes.length; i++) {
+		    estudiantes[i]=new Estudiante();	
+		}
+	}
+	private boolean ContarAsistenciaAlumnos() {
+		int contadorAsistencia=0;
+		for (int i = 0; i < estudiantes.length; i++) {
+			if(estudiantes[i].isAsistencias()) {
+				contadorAsistencia++;
+			}
+		}
+		System.out.println("La asistencia es de: "+contadorAsistencia+" Estudiantes");
+		return (contadorAsistencia>=(MaxEstudiantes/2));
+	}
+	
+
+}

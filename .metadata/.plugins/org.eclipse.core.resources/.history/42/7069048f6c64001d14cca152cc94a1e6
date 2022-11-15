@@ -1,0 +1,43 @@
+package poo;
+
+public class Persona {
+	private String Nombre;
+	private int Edad;
+	private char Sexo;
+	private boolean Asistencias;
+	public Persona(String nombre, int edad, char sexo, boolean asistencias) {
+		super();
+		Nombre = nombre;
+		Edad = edad;
+		Sexo = sexo;
+		Asistencias = asistencias;
+	}
+	public String getNombre() {
+		return Nombre;
+	}
+	public void setNombre(String nombre) {
+		Nombre = nombre;
+	}
+	public int getEdad() {
+		return Edad;
+	}
+	public void setEdad(int edad) {
+		Edad = edad;
+	}
+	public char getSexo() {
+		return Sexo;
+	}
+	public void setSexo(char sexo) {
+		Sexo = sexo;
+	}
+	public boolean isAsistencias() {
+		return Asistencias;
+	}
+	public void setAsistencias(boolean asistencias) {
+		Asistencias = asistencias;
+	}
+	
+	
+	
+
+}
